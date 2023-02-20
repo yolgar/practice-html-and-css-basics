@@ -5,6 +5,7 @@
 .container {
     margin: 0 auto;
     max-width: 1200px;
+    background:#B5D5C5;
 }
 .cell {
     min-height: 50px;
