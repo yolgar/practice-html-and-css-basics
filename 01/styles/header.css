@@ -9,11 +9,11 @@
     min-width: 400px;
 }
 .nav {
-   background: #F5F5DC;
+   background: var(--color-nav);
    display: flex;
 }
 .nav__item {
-    background: #F5F5DC;
+    background: var(--color-nav);
     cursor: pointer;
     padding: 0 5px;
     margin-left: 5px;
