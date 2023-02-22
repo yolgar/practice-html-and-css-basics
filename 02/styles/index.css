@@ -126,11 +126,12 @@ którego przodek to element o klasie .ac-container
 }
 
 /*
-Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj pseudoklasy) 
+Rodzeństwo o typie article, dla elementu input, 
+który jest zaznaczony (użyj pseudoklasy) 
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
-?? {
+.ac-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
