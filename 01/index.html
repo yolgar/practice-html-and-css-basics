@@ -44,6 +44,7 @@
         <img src="../05/images/ugliestdog.png" alt="obrazek psa" width="100px" height="100px">
         <figcaption>Ilustracja do paragrafu</figcaption>
     </figure>
+    <hr>
     <table>
     <caption>Przykładowa tabela</caption>
     <thead>
@@ -62,12 +63,42 @@
     </tbody>
     </table>
 </article>
+<hr>
     <div>
         <form action="comment">
-            <!-- tutaj zrobic formularz do komentowania albo jakie atrybuty 
-            przyjmuje form?-->
+            <div>
+                <label>Autor
+                    <input name="autorName">
+                </label>
+            </div>
+                <div>
+                    <label>Data publikacji
+                        <input type="date" name="dataPublikacji">
+                    </label>
+                </div>
+                <div>
+                    <input type="text" name="wpisanaTreść" placeholder="Dodaj komentarz">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
         </form>
     </div>
+    <section>
+        <div>
+            <p>Autor</p>
+            <time datetime="YYYY-MM-DD">2023-01-14</time>
+            <p>Pierwszy komentarz</p>
+        </div>
+        <div>
+            <p>Autor</p>
+            <time datetime="YYYY-MM-DD">2023-01-14</time>
+            <p>Drugi komentarz</p>
+        </div>
+    </section>
+
+
+
     <article id="comment-01">
         <p>Autor</p>
         <time datetime="YYYY-MM-DD">2023-01-13</time>
