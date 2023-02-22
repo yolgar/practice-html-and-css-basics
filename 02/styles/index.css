@@ -86,12 +86,14 @@ to samo co w 1) ale z efektem najechania kursorem na label
 }
 
 /*
-Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
-którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
+Pseudo-element jako ostatnie dziecko label, tworzony tylko 
+po najechaniu kursorem myszy na ten element (label),
+którego poprzedni brat jest zaznaczonym inputem 
+(użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-?? {
+.ac-container input:checked + label:hover::before {
     background-image: url(../images/arrow_up.png);
 }
 
