@@ -5,14 +5,14 @@
 }
 .child--first {
 flex: 1 30%;
-justify-content: space-between;
 }
 .child--middle {
 flex: 1 30%;
-justify-content: space-between;
 }
  .child--last {
 flex: 1 40%;
-justify-content: space-between;
 }
-        
+.child--first + .child--middle,
+.child--middle + .child--last {
+margin-right: 10px;
+}
