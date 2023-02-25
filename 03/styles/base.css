@@ -38,3 +38,12 @@ font-style: italic;
 .child--middle + .child--last {
 margin-right: 10px;
 }
+parent--inline-block {
+    display: inline-block;
+}
+parent--float {
+    float:left;
+}
+parent--flexbox {
+    display: flex;
+}
