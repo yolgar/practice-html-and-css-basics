@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="../04/styles/base.css">
 </head>
 <body>
-    <div>
-        <ul>
-            <li>HOME</li>
-            <li>ITEMS
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2
-                        <ul>
-                            <li>Item 2.1</li>
-                            <li>Item 2.2</li>
+    <div class="container">
+    <nav class="header__nav">
+        <ul class="nav">
+            <li class="nav__item home">
+                <a href="#">HOME</a>
+            </li>
+            <li class="nav__item">ITEMS
+                <ul class="nav__dropdown dropdown">
+                    <li class="dropdown__item">Item 1</li>
+                    <li class="dropdown__item">Item 2</li>
+                        <ul class="nav__submenu submenu">
+                            <li class="submenu__item">Item 2.1</li>
+                            <li class="submenu__item">Item 2.2</li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li>SETTINGS</li>
-            <li>CONTACT</li>
+            <li class="nav__item">SETTINGS</li>
+            <li class="nav__item">CONTACT</li>
         </ul>
-    </div>
+    </nav>
+</div>
 </body>
 </html>

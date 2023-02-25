@@ -1,0 +1,64 @@
+:root {
+    --color-nav-item:#009AE1;
+    --color-dropdown-menu: #333333;
+    --color-subitem: #B2B2B2;
+    --color-subitem-active: #D4F1FB;
+}
+
+body {
+    background-color: lightgray;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #F6F6F6;
+}
+.nav {
+    display: flex;
+}
+.header__nav >* {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    min-width: 400px;
+    border: 3px solid red;
+}
+.nav__item {
+    width: 400px;
+    height: 100px;
+    margin-left: 5px;
+    position: relative;
+    border: 3px solid green;
+}
+.nav__item:active {
+    border-top-color: 2px solid var(--color-nav-item);
+}
+.nav__dropdown {
+    min-width: 100px;
+    background-color: var(--color-dropdown-menu);
+    position:absolute;
+    padding-top: 10px;
+    left: 0;
+}
+.dropdown__item {
+    background-color: var(--color-dropdown-menu);
+    min-width: 100px;
+    padding: 5px 20px;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.nav__dropdown {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    left:0;
+}
+.submenu__item{
+    color:var(--color-subitem);
+    position: absolute;
+    padding-left: 30px;
+}
+
+
+zeby zrobic strzalke w dol w ITEMS to ">" obrocny : transform: rotate(90deg). 
