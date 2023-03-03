@@ -31,38 +31,34 @@
     font-family: "source_sans";
 }
 
+.parent--inline-block .child {
+    display: inline-block;
+}
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+}
+
 .parent--float {
     font-weight: bold;
 }
 
-parent--flexbox {
-    font-style: italic;
-}
-
-parent--inline-block .child {
-    display: inline-block;
-}
-
-parent--float::after {
+.parent--float::after {
     content: "";
     display: block;
     clear: both;
 }
 
-parent--float .child {
+.parent--float .child {
     float: left;
 }
 
-parent--flexbox {
+.parent--flexbox {
     display: flex;
-}
-
-.child--first,
-.child--middle {
-    width: calc(30%-10px);
-    margin-right: 10px;
-}
-
-child--last {
-    width: 40%;
+    font-style: italic;
 }
