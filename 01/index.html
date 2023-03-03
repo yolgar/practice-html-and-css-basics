@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +10,20 @@
 
 <header>
     <h1>
-        <img src="../05/images/ugliestdog.png" alt="obrazek z psem" width="100px" height="100px">
-    Logo
+        <img src="../05/images/ugliestdog.png" alt="obrazek z psem" width="100px" height="100px"/>
     </h1>
     <nav>
         <ul>
-            <li>Menu
-                <ul>
+            <li>
+                <a hre="#">Home</a>
+            </li>
                     <li>
                         <a href="#">About me</a>
+                        <ul>
+                            <li>
+                                <a href="#">All about me</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">My pictures</a>
@@ -26,81 +31,79 @@
                     <li>
                         <a href="#">Comments</a>
                     </li>
-                </ul>
-            </li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>
 <article>
-    <p>Autor</p>
-    <time datetime="YYYY-MM-DD">2023-01-12</time>
-    <h1>Tytuł</h1>
+    <h1>Title</h1>
     <p>Lorem Lorem Lorem</p>
     <figure>
         <img src="../05/images/ugliestdog.png" alt="obrazek psa" width="100px" height="100px">
-        <figcaption>Ilustracja do paragrafu</figcaption>
+        <figcaption>Image to article</figcaption>
     </figure>
-    <hr>
     <table>
-    <caption>Przykładowa tabela</caption>
-    <thead>
-        <tr>
-            <th>Nazwa</th>
-            <th>Kolor</th>
-            <th>Miasto</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Nazwa własna</td>
-            <td>Zielony</td>
-            <td>Kraków</td>
-        </tr>
-    </tbody>
-    </table>
+        <caption>Example table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Colour</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Green</td>
+                <td>Cracow</td>
+            </tr>
+        </tbody>
+        </table>
+<footer>
+    <p>Author: <a rel="author">John B.</a>, publication date:  <time datetime="2023-01-12">two days ago</time></p>
+</footer>
 </article>
-<hr>
-    <div>
-        <form action="comment">
-            <div>
-                <label>Autor
-                    <input name="autorName">
-                </label>
-            </div>
-                <div>
-                    <label>Data publikacji
-                        <input type="date" name="dataPublikacji">
-                    </label>
-                </div>
-                <div>
-                    <textarea name="komentarz">Dodaj komentarz</textarea>
-                </div>
-                <div>
-                    <button>Post</button>
-                </div>
-        </form>
-    </div>
-    <section>
-        <div>
-            <p>Autor</p>
-            <time datetime="YYYY-MM-DD">2023-01-14</time>
-            <p>Pierwszy komentarz</p>
-        </div>
-        <div>
-            <p>Autor</p>
-            <time datetime="YYYY-MM-DD">2023-01-14</time>
-            <p>Drugi komentarz</p>
-        </div>
-    </section>
-    </section>
 </main>
+<section>
+        <form action=" ">
+            <div>
+                <label for="authorName">Author</label>
+                    <input type="text" name="authorName" id="authorName">
+            </div>
+            <div>
+                <label for="comment"></label>
+                <textarea name="comment" id="comment" cols="30" rows="30"></textarea>
+            </div>
+            <div>
+                <button>Post comment</button>
+            </div>
+        </form>
+    
+<ul>
+    <li>
+        <h2>
+            <a rel="author">Joy</a>, <time datetime="2023-02-15">2023-02-15</time>
+        </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore voluptate animi beatae! Numquam tenetur autem dicta voluptas enim aut, explicabo doloribus optio necessitatibus iure ratione dolores beatae sequi ut!</p>
+    </li>
+    <li>
+        <h2>
+            <a rel="author">Erica</a>, <time datetime="2023-02-16">2023-02-16</time>
+        </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore voluptate animi beatae! Numquam tenetur autem dicta voluptas enim aut, explicabo doloribus optio necessitatibus iure ratione dolores beatae sequi ut!</p>
+    </li>
+    <li>
+        <h2>
+            <a rel="author">Thao</a>, <time datetime="2023-03-21">2023-03-21</time>
+        </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore voluptate animi beatae! Numquam tenetur autem dicta voluptas enim aut, explicabo doloribus optio necessitatibus iure ratione dolores beatae sequi ut!</p>
+    </li>
+</ul>
+</section>
 
 <footer>
-    <div>&copy; Prawa autorskie</div>
+    <div>&copy; Copy rights</div>
 </footer>
-
 </body>
 </html>
