@@ -1,49 +1,20 @@
-@font-face {
-    font-family: "sourceSansProR";
-    src: url(../source-sans-pro/SourceSansPro-Regular.otf) format("otf");
-    font-style: normal;
-}
-@font-face {
-    font-family: "sourceSansProB";
-    src: url(../source-sans-pro/SourceSansPro-Bold.otf) format("otf");
-    font-style: normal;
-    font-weight: bold;
-}
-@font-face {
-    font-family: "sourceSansProI";
-    src: url(../source-sans-pro/SourceSansPro-It.otf) format("otf");
-    font-style: italic;
-}
 .parent {
     width: 600px;
-    padding: 20px;
-    display: flex;
 }
-.child--first {
-flex: 1 30%;
-font-family: "sourceSansProR";
-font-style: normal;
-}
-.child--middle {
-flex: 1 30%;
-font-family: "sourceSansProB";
-font-weight: bold;
-}
- .child--last {
-flex: 1 40%;
-font-family: "sourceSansProI";
-font-style: italic;
-}
-.child--first + .child--middle,
-.child--middle + .child--last {
-margin-right: 10px;
-}
-parent--inline-block {
+parent--inline-block .child{
     display: inline-block;
 }
 parent--float {
-    float:left;
 }
-parent--flexbox {
-    display: flex;
+parent--float .child{
+   float:left;
+}
+.child--first,
+.child--middle{
+width: calc(30%-10px);
+margin-right: 10px;
+
+}
+child--last {
+    width: 40%;
 }
