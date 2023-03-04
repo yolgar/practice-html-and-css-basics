@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 04</title>
+    <title>Task 04</title>
     <link rel="stylesheet" href='../04/styles/reset.css'>
     <link rel="stylesheet" href="../04/styles/base.css">
 </head>
+
 <body>
-    <div class="container">
-    <nav class="header__nav">
-        <ul class="nav">
-            <li class="nav__item home">
-                <a href="#">HOME</a>
+    <nav class="nav">
+        <ul class="nav__list menu">
+            <li class="menu__item">
+                <a href="#" class="menu__link">HOME</a>
             </li>
-            <li class="nav__item">ITEMS
-                <ul class="nav__dropdown dropdown">
-                    <li class="dropdown__item">Item 1</li>
-                    <li class="dropdown__item">Item 2</li>
-                        <ul class="nav__submenu submenu">
-                            <li class="submenu__item">Item 2.1</li>
-                            <li class="submenu__item">Item 2.2</li>
+            <li class="menu__item menu__dropdown">
+                <a href="#" class="menu__link">ITEMS</a>
+                <ul class="dropdown">
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Item 1</a>
+                    </li>
+
+                    <li class="dropdown__item menu__dropdown-submenu">
+                        <a href="#" class="dropdown__link">Item 2</a>
+                        <ul class="dropdown-submenu">
+                            <li class="dropdown-submenu__item">
+                                <a href="#" class="dropdown-submenu__link">Item 2.1</a>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <a href="#" class="dropdown-submenu__link">Item 2.2</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li class="nav__item">SETTINGS</li>
-            <li class="nav__item">CONTACT</li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">SETTINGS</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">CONTACT</a>
+            </li>
         </ul>
     </nav>
-</div>
 </body>
+
 </html>
