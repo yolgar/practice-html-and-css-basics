@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,31 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/content.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
+
 <body>
-    <header class="header row">
-        <div class="header__container container">
-            <h1 class="header__logo cell"><img src="images/ugliestdog.png" alt="ugliest-dog"></h1>
-            <nav class="header__nav cell">
-                <ul class="nav cell">
-                    <li class="nav__item cell">Menu
-                        <ul class="nav__dropdown dropdown">
-                            <li class="dropdown__item">
-                                <a class="nav__link" href="#">About me</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a class="nav__link" href="#">My pictures</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a class="nav__link" href="#">Comments</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <header class="plummy plummy--header">
+        <div class="maroon">
+            <h1 class="orange orange--logo"></h1>
+            <nav class="orange orange--nav"></nav>
         </div>
     </header>
+    <main class="plummy plummy--main">
+        <div class="maroon">
+            <article class="orange orange--article"></article>
+            <aside class="orange orange--aside"></aside>
+        </div>
+    </main>
+    <section class="plummy plummy--section">
+        <div class="maroon">
+            <article class="orange"></article>
+            <article class="orange"></article>
+            <article class="orange"></article>
+        </div>
+    </section>
+    <footer class="plummy plummy-footer">
+        <div class="maroon">
+            <div class="orange"></div>
+        </div>
+    </footer>
 </body>
 </html>

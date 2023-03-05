@@ -1,18 +1,68 @@
 :root {
-    --color-container: #B5D5C5;
-    --color-nav: #F5F5DC;
-    --color-beta-container: #B08BBB;
-    --color-footer: #ECA869;
+    --orange-color: #E9A178;
+    --maroon-color: #A84448;
+    --plummy-color: #7A3E65;
 }
-.row, .cell, .container {
+
+body {
+    background-color: #F6E1C3;
+}
+
+.plummy {
+    border: 5px solid var(--plummy-color);
     margin: 5px;
-    padding: 5px;
 }
-.container {
+
+.plummy--header .maroon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maroon {
+    border: 5px solid var(--maroon-color);
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 1200px;
-    background:var(--color-container);
+    padding: 5px 0px;
 }
-.cell {
+
+.orange {
+    background-color: var(--orange-color);
     min-height: 50px;
+}
+
+.orange--logo {
+    width: 160px;
+}
+
+.orange--nav {
+    width: 300px;
+}
+
+.plummy--main .maroon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plummy--main .orange {
+    width: 48%;
+    min-height: 400px;
+}
+
+.plummy--section .maroon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plummy--section .orange {
+    width: 30%;
+    min-height: 200px;
+}
+
+.plummy-footer .maroon {
+    display: flex;
+    justify-content: center;
+}
+
+.plummy-footer .orange {
+    width: 100px;
 }
